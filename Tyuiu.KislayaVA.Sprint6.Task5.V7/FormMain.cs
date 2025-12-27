@@ -3,9 +3,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Tyuiu.KislayaVA.Sprint6.Task5.V7
 {
-    public partial class MainForm : Form
+    public partial class FormMain : Form
     {
-        public MainForm()
+        public FormMain()
         {
             InitializeComponent();
 
@@ -58,6 +58,11 @@ namespace Tyuiu.KislayaVA.Sprint6.Task5.V7
         private void button3_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("таск 5 РППб25-1 Кислая В. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,90 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            groupBoxCondition = new GroupBox();
+            labelCondition = new Label();
+            groupBoxFunc = new GroupBox();
+            labelFunc = new Label();
+            textBoxFunc = new TextBox();
+            groupBoxData = new GroupBox();
+            labelStop = new Label();
+            labelStart = new Label();
+            textBoxEnd = new TextBox();
+            textBoxStart = new TextBox();
             buttonInfo = new Button();
             buttonDone = new Button();
-            textBoxStart = new TextBox();
-            textBoxEnd = new TextBox();
-            textBoxFunc = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            pictureBoxCondition = new PictureBox();
+            groupBoxCondition.SuspendLayout();
+            groupBoxFunc.SuspendLayout();
+            groupBoxData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCondition).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxCondition
             // 
-            groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(11, 20);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(473, 306);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBoxCondition.Controls.Add(pictureBoxCondition);
+            groupBoxCondition.Controls.Add(labelCondition);
+            groupBoxCondition.Location = new Point(11, 20);
+            groupBoxCondition.Name = "groupBoxCondition";
+            groupBoxCondition.Size = new Size(565, 306);
+            groupBoxCondition.TabIndex = 0;
+            groupBoxCondition.TabStop = false;
+            groupBoxCondition.Text = "Условие";
             // 
-            // groupBox2
+            // labelCondition
             // 
-            groupBox2.Controls.Add(label1);
-            groupBox2.Controls.Add(textBoxFunc);
-            groupBox2.Location = new Point(506, 20);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(250, 418);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            labelCondition.AutoSize = true;
+            labelCondition.Location = new Point(7, 23);
+            labelCondition.Name = "labelCondition";
+            labelCondition.Size = new Size(258, 20);
+            labelCondition.TabIndex = 0;
+            labelCondition.Text = "Произвести табулирование функци";
             // 
-            // groupBox3
+            // groupBoxFunc
             // 
-            groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(label3);
-            groupBox3.Controls.Add(textBoxEnd);
-            groupBox3.Controls.Add(textBoxStart);
-            groupBox3.Location = new Point(12, 332);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(196, 106);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "groupBox3";
+            groupBoxFunc.Controls.Add(labelFunc);
+            groupBoxFunc.Controls.Add(textBoxFunc);
+            groupBoxFunc.Location = new Point(582, 20);
+            groupBoxFunc.Name = "groupBoxFunc";
+            groupBoxFunc.Size = new Size(250, 418);
+            groupBoxFunc.TabIndex = 1;
+            groupBoxFunc.TabStop = false;
+            groupBoxFunc.Text = "Вывод данных";
             // 
-            // buttonInfo
+            // labelFunc
             // 
-            buttonInfo.Location = new Point(214, 351);
-            buttonInfo.Name = "buttonInfo";
-            buttonInfo.Size = new Size(74, 68);
-            buttonInfo.TabIndex = 3;
-            buttonInfo.Text = "button1";
-            buttonInfo.UseVisualStyleBackColor = true;
-            buttonInfo.Click += this.buttonInfo_Click;
-            // 
-            // buttonDone
-            // 
-            buttonDone.Location = new Point(305, 351);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(179, 68);
-            buttonDone.TabIndex = 4;
-            buttonDone.Text = "button2";
-            buttonDone.UseVisualStyleBackColor = true;
-            buttonDone.Click += this.buttonDone_Click;
-            // 
-            // textBoxStart
-            // 
-            textBoxStart.Location = new Point(6, 26);
-            textBoxStart.Name = "textBoxStart";
-            textBoxStart.Size = new Size(125, 27);
-            textBoxStart.TabIndex = 0;
-            // 
-            // textBoxEnd
-            // 
-            textBoxEnd.Location = new Point(6, 59);
-            textBoxEnd.Name = "textBoxEnd";
-            textBoxEnd.Size = new Size(125, 27);
-            textBoxEnd.TabIndex = 1;
+            labelFunc.AutoSize = true;
+            labelFunc.Location = new Point(6, 30);
+            labelFunc.Name = "labelFunc";
+            labelFunc.Size = new Size(75, 20);
+            labelFunc.TabIndex = 1;
+            labelFunc.Text = "Результат";
             // 
             // textBoxFunc
             // 
@@ -121,79 +96,120 @@
             textBoxFunc.Name = "textBoxFunc";
             textBoxFunc.Size = new Size(238, 346);
             textBoxFunc.TabIndex = 0;
-            textBoxFunc.TextChanged += this.textBoxFunc_TextChanged;
+            textBoxFunc.TextChanged += textBoxFunc_TextChanged;
             // 
-            // label1
+            // groupBoxData
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
+            groupBoxData.Controls.Add(labelStop);
+            groupBoxData.Controls.Add(labelStart);
+            groupBoxData.Controls.Add(textBoxEnd);
+            groupBoxData.Controls.Add(textBoxStart);
+            groupBoxData.Location = new Point(12, 332);
+            groupBoxData.Name = "groupBoxData";
+            groupBoxData.Size = new Size(299, 106);
+            groupBoxData.TabIndex = 2;
+            groupBoxData.TabStop = false;
+            groupBoxData.Text = "Ввод данных";
             // 
-            // label2
+            // labelStop
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(7, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 0;
-            label2.Text = "label2";
+            labelStop.AutoSize = true;
+            labelStop.Location = new Point(167, 37);
+            labelStop.Name = "labelStop";
+            labelStop.Size = new Size(91, 20);
+            labelStop.TabIndex = 3;
+            labelStop.Text = "Конец шага";
             // 
-            // label3
+            // labelStart
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(137, 29);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
+            labelStart.AutoSize = true;
+            labelStart.Location = new Point(6, 37);
+            labelStart.Name = "labelStart";
+            labelStart.Size = new Size(85, 20);
+            labelStart.TabIndex = 2;
+            labelStart.Text = "Старт шага";
             // 
-            // label4
+            // textBoxEnd
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(137, 62);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
+            textBoxEnd.Location = new Point(167, 60);
+            textBoxEnd.Name = "textBoxEnd";
+            textBoxEnd.Size = new Size(125, 27);
+            textBoxEnd.TabIndex = 1;
+            // 
+            // textBoxStart
+            // 
+            textBoxStart.Location = new Point(6, 60);
+            textBoxStart.Name = "textBoxStart";
+            textBoxStart.Size = new Size(125, 27);
+            textBoxStart.TabIndex = 0;
+            // 
+            // buttonInfo
+            // 
+            buttonInfo.Location = new Point(317, 350);
+            buttonInfo.Name = "buttonInfo";
+            buttonInfo.Size = new Size(74, 68);
+            buttonInfo.TabIndex = 3;
+            buttonInfo.Text = "?";
+            buttonInfo.UseVisualStyleBackColor = true;
+            buttonInfo.Click += buttonInfo_Click;
+            // 
+            // buttonDone
+            // 
+            buttonDone.Location = new Point(397, 351);
+            buttonDone.Name = "buttonDone";
+            buttonDone.Size = new Size(179, 68);
+            buttonDone.TabIndex = 4;
+            buttonDone.Text = "Выполнить";
+            buttonDone.UseVisualStyleBackColor = true;
+            buttonDone.Click += buttonDone_Click;
+            // 
+            // pictureBoxCondition
+            // 
+            pictureBoxCondition.Image = (Image)resources.GetObject("pictureBoxCondition.Image");
+            pictureBoxCondition.Location = new Point(20, 71);
+            pictureBoxCondition.Name = "pictureBoxCondition";
+            pictureBoxCondition.Size = new Size(360, 99);
+            pictureBoxCondition.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxCondition.TabIndex = 1;
+            pictureBoxCondition.TabStop = false;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(842, 450);
             Controls.Add(buttonDone);
             Controls.Add(buttonInfo);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBoxData);
+            Controls.Add(groupBoxFunc);
+            Controls.Add(groupBoxCondition);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 1 | Вариант 29 | Кислая В. А.";
             Load += Form1_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
+            groupBoxCondition.ResumeLayout(false);
+            groupBoxCondition.PerformLayout();
+            groupBoxFunc.ResumeLayout(false);
+            groupBoxFunc.PerformLayout();
+            groupBoxData.ResumeLayout(false);
+            groupBoxData.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCondition).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private Label label2;
-        private GroupBox groupBox2;
-        private Label label1;
+        private GroupBox groupBoxCondition;
+        private Label labelCondition;
+        private GroupBox groupBoxFunc;
+        private Label labelFunc;
         private TextBox textBoxFunc;
-        private GroupBox groupBox3;
+        private GroupBox groupBoxData;
         private TextBox textBoxEnd;
         private TextBox textBoxStart;
         private Button buttonInfo;
         private Button buttonDone;
-        private Label label4;
-        private Label label3;
+        private Label labelStop;
+        private Label labelStart;
+        private PictureBox pictureBoxCondition;
     }
 }

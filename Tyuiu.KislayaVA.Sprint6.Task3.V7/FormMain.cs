@@ -19,17 +19,17 @@ namespace Tyuiu.KislayaVA.Sprint6.Task3.V7
             int[,] res = ds.Calculate(matrix);
             int rows = res.GetUpperBound(0) + 1;
             int coll = res.Length / rows;
-            dataGridView1.ColumnCount = coll;
-            dataGridView1.RowCount = rows;
+            dataGridViewDone.ColumnCount = coll;
+            dataGridViewDone.RowCount = rows;
             for (int i = 0; i < coll; i++)
             {
-                dataGridView1.Columns[i].Width = 50;
+                dataGridViewDone.Columns[i].Width = 50;
             }
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < coll; j++)
                 {
-                    dataGridView1.Rows[i].Cells[j].Value = Convert.ToString(res[i, j]);
+                    dataGridViewDone.Rows[i].Cells[j].Value = Convert.ToString(res[i, j]);
                 }
             }
         }

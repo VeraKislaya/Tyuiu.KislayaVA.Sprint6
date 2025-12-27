@@ -31,7 +31,12 @@ namespace Tyuiu.KislayaVA.Sprint6.Task0.V14
             MessageBox.Show("Таск 0 РППб25-1 Кислая В. А.", "Информация", MessageBoxButtons.OK);
         }
         private void textBoxEnter_KVA_TextChanged(object sender, EventArgs e)
-        { 
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
